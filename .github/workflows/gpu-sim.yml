@@ -37,7 +37,7 @@ jobs:
           cmake -B build -DCMAKE_BUILD_TYPE=Release \
             -DCMAKE_CUDA_ARCHITECTURES=80-virtual \
             -DCMAKE_CUDA_RUNTIME_LIBRARY=Shared \
-            -DBUILD_DOCS=OFF -DBUILD_TESTING=ON
+            -DBUILD_DOCS=OFF -DBUILD_TESTING=ON -DBUILD_SHARED_LIBS=ON
 
       # Catch2 test discovery runs the test binary during the build.
       - name: Build
